@@ -104,6 +104,9 @@ git clone https://github.com/meherazhosensiam/ShadowScan.git
 # Navigate to the directory
 cd ShadowScan
 
+# make a virtual environment
+python -m venv venv
+
 # Install dependencies
 pip install -r requirements.txt
 

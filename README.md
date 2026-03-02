@@ -385,5 +385,5 @@ If you find ShadowScan useful, please consider giving it a ⭐ star on GitHub!
 <p align="center">
   <b>ShadowScan</b> - Illuminating Network Security, One Port at a Time
   <br>
-  <i>Made with ❤️ by Mahara HOSEN SIAM</i>
+  <i>Made with ❤️ by Meheraz HOSEN SIAM</i>
 </p>

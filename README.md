@@ -14,7 +14,7 @@
 <p align="center">
   <i>A professional penetration testing tool for network reconnaissance and port scanning</i>
   <br>
-  <b>🇫🇷 Navigation France | Multilingual Support</b>
+  <b> | Multilingual Support</b>
 </p>
 
 ---

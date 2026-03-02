@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ShadowScan - Setup Configuration
-Author: Mahara HOSEN SIAM
+Author: Meheraz HOSEN SIAM
 """
 
 from setuptools import setup, find_packages

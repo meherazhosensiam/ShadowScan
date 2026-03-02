@@ -1,5 +1,5 @@
 # ShadowScan - Advanced Network Port Scanner
-# Author: Mahara HOSEN SIAM
+# Author: Meheraz HOSEN SIAM
 # Python Dependencies
 
 # Required for colored terminal output (cross-platform)

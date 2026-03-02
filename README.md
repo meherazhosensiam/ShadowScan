@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/mherasmeherazhosensiamiam/ShadowScan/main/shadowscan-logo.png" alt="ShadowScan Logo" width="600">
+  <img src="shadowscan-logo.png" alt="ShadowScan Logo" width="600">
   <br>
   🔍 ShadowScan - Advanced Network Port Scanner
 </h1>

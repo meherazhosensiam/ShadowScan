@@ -45,7 +45,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
    ```
 3. Add the original repository as an upstream remote:
    ```bash
-   git remote add upstream https://github.com/mharasiam/ShadowScan.git
+   git remote add upstream https://github.com/meherazhosensiam/ShadowScan.git
    ```
 
 ---

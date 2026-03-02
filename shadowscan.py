@@ -55,7 +55,7 @@ except ImportError:
 # Version and Tool Information
 TOOL_NAME = "ShadowScan"
 VERSION = "2.0.0"
-AUTHOR = "MEHERAZ HOSEN SIAM"
+AUTHOR = "Meheraz HOSEN SIAM"
 DESCRIPTION = "Advanced Network Port Scanner for Penetration Testing"
 
 # Common Ports and Services Database
@@ -126,7 +126,7 @@ def print_french_welcome():
     """Display French themed welcome message"""
     welcome = f"""
 {Fore.BLUE}╔═══════════════════════════════════════════════════════════════════╗
-{Fore.BLUE}║  {Fore.WHITE}🇫🇷 Bienvenue dans ShadowScan - Navigation {Fore.BLUE}              ║
+{Fore.BLUE}║  {Fore.WHITE}🇫🇷 Bienvenue dans ShadowScan - Navigation France{Fore.BLUE}              ║
 {Fore.BLUE}╠═══════════════════════════════════════════════════════════════════╣
 {Fore.BLUE}║  {Fore.CYAN}[1]{Fore.WHITE} Analyse rapide (Quick Scan)     {Fore.CYAN}[2]{Fore.WHITE} Analyse complète      {Fore.BLUE}║
 {Fore.BLUE}║  {Fore.CYAN}[3]{Fore.WHITE} Capture de bannière           {Fore.CYAN}[4]{Fore.WHITE} Ports personnalisés   {Fore.BLUE}║
@@ -141,7 +141,7 @@ def print_french_welcome():
 class ShadowScanner:
     """Main Scanner Class for ShadowScan"""
     
-    def __init__(self, target, ports=None, threads=100, timeout=1, verbose=False):
+    def __init__(self, target, ports=None, threads=100, timeout=1, verbose=False, banner_grab_enabled=False):
         self.target = target
         self.ports = ports or list(range(1, 1025))
         self.threads = threads
@@ -153,7 +153,7 @@ class ShadowScanner:
         self.scan_results = {}
         self.start_time = None
         self.end_time = None
-        self.banner_grab_enabled = False
+        self.banner_grab_enabled = banner_grab_enabled
         
     def resolve_target(self):
         """Resolve hostname to IP address"""
@@ -447,7 +447,7 @@ def interactive_mode():
   {Fore.GREEN}●{Fore.WHITE} French navigation interface
   {Fore.GREEN}●{Fore.WHITE} Color-coded output
   
-{Fore.CYAN}  Author: {Fore.YELLOW}Mahara HOSEN SIAM
+{Fore.CYAN}  Author: {Fore.YELLOW}Meheraz HOSEN SIAM
 {Fore.CYAN}  Role: {Fore.YELLOW}Cybersecurity Learner & Future Penetration Tester
 {Fore.CYAN}  Version: {Fore.YELLOW}{VERSION}
 {Fore.CYAN}  License: {Fore.YELLOW}Shadow Public License v1.0

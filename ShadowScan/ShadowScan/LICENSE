@@ -1,0 +1,180 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    SHADOW PUBLIC LICENSE v1.0                                ║
+║                                                                              ║
+║                    Copyright (c) 2024 Meheraz HOSEN SIAM                    ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════
+                              PREAMBLE
+═══════════════════════════════════════════════════════════════════════════════
+
+The Shadow Public License (SPL) is a specialized license designed for 
+cybersecurity tools and penetration testing software. This license aims to:
+
+  • Promote responsible use of security testing tools
+  • Protect the author from liability for misuse
+  • Encourage collaboration within the security community
+  • Ensure ethical usage in authorized contexts only
+
+This license is specifically crafted for "ShadowScan" and related security 
+tools developed by Meheraz HOSEN SIAM.
+
+═══════════════════════════════════════════════════════════════════════════════
+                           TERMS AND CONDITIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1: DEFINITIONS
+
+  1.1 "Software" refers to ShadowScan and all associated source code, 
+      documentation, and related materials.
+
+  1.2 "Author" refers to Meheraz HOSEN SIAM, the original creator of 
+      the Software.
+
+  1.3 "User" refers to any individual or entity that uses, copies, modifies, 
+      or distributes the Software.
+
+  1.4 "Authorized Use" refers to the use of the Software for legitimate 
+      security testing with proper authorization from the system owner.
+
+  1.5 "Malicious Use" refers to any use of the Software for unauthorized 
+      access, damage, theft, or any illegal activity.
+
+
+SECTION 2: GRANT OF LICENSE
+
+  2.1 Personal and Educational Use
+      The User is granted a non-exclusive, worldwide, royalty-free license 
+      to use the Software for personal learning, educational purposes, and 
+      authorized security research.
+
+  2.2 Professional Use
+      Security professionals and penetration testers may use the Software 
+      for authorized security assessments, provided they have explicit 
+      written permission from the system owner.
+
+  2.3 Modification Rights
+      The User may modify the Software for personal or internal use. 
+      Any modifications must retain the original license and attribution 
+      to the Author.
+
+  2.4 Distribution Rights
+      The User may distribute unmodified copies of the Software, provided 
+      that this license and all copyright notices are preserved.
+
+
+SECTION 3: RESTRICTIONS
+
+  3.1 Malicious Use Prohibition
+      THE SOFTWARE SHALL NOT BE USED FOR ANY MALICIOUS PURPOSE. This 
+      includes, but is not limited to:
+        • Unauthorized access to computer systems
+        • Data theft or exfiltration
+        • Denial of service attacks
+        • Any violation of local, national, or international law
+
+  3.2 Commercial Use Restriction
+      Commercial use of the Software requires prior written permission 
+      from the Author. This includes:
+        • Bundling with commercial products
+        • Using the Software as part of paid services
+        • Reselling or licensing the Software
+
+  3.3 Attribution Requirement
+      Any use or distribution of the Software must include clear 
+      attribution to the Author (Meheraz HOSEN SIAM) and a reference 
+      to the original repository.
+
+  3.4 License Preservation
+      All copies and modifications must include this license in full.
+
+
+SECTION 4: LIABILITY DISCLAIMER
+
+  4.1 NO WARRANTY
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+      EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+      OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+      NONINFRINGEMENT.
+
+  4.2 LIMITATION OF LIABILITY
+      IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, 
+      OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR 
+      OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE 
+      SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+  4.3 USER RESPONSIBILITY
+      THE USER ASSUMES FULL RESPONSIBILITY FOR ANY CONSEQUENCES 
+      RESULTING FROM THE USE OF THIS SOFTWARE. The Author is not 
+      responsible for any damages, legal issues, or other consequences 
+      arising from the use or misuse of the Software.
+
+
+SECTION 5: INDEMNIFICATION
+
+  The User agrees to indemnify, defend, and hold harmless the Author 
+  from any claims, damages, losses, liabilities, and legal fees 
+  (including reasonable attorneys' fees) arising out of or relating 
+  to:
+    • The User's use of the Software
+    • The User's violation of this license
+    • The User's violation of any applicable law or regulation
+    • Any third-party claim related to the User's use of the Software
+
+
+SECTION 6: TERMINATION
+
+  6.1 This license is effective until terminated.
+
+  6.2 The license will terminate automatically if the User fails to 
+      comply with any of its terms.
+
+  6.3 Upon termination, the User must destroy all copies of the 
+      Software in their possession.
+
+
+SECTION 7: GOVERNING LAW
+
+  This license shall be governed by and construed in accordance with 
+  the laws of the jurisdiction in which the Author resides, without 
+  regard to its conflict of law provisions.
+
+
+SECTION 8: MISCELLANEOUS
+
+  8.1 If any provision of this license is found to be unenforceable, 
+      the remaining provisions will continue in full force and effect.
+
+  8.2 This license represents the complete agreement concerning the 
+      subject matter and supersedes all prior agreements.
+
+  8.3 Any modifications to this license must be in writing and 
+      signed by the Author.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                        ACCEPTANCE OF TERMS
+═══════════════════════════════════════════════════════════════════════════════
+
+BY USING, COPYING, MODIFYING, OR DISTRIBUTING THE SOFTWARE, YOU ACKNOWLEDGE 
+THAT YOU HAVE READ THIS LICENSE, UNDERSTAND IT, AND AGREE TO BE BOUND BY ITS 
+TERMS AND CONDITIONS.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                           CONTACT INFORMATION
+═══════════════════════════════════════════════════════════════════════════════
+
+For questions, permissions, or commercial licensing inquiries:
+
+  Author:    Meheraz HOSEN SIAM
+  GitHub:    https://github.com/meherazhosensiam
+  Project:   ShadowScan
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        END OF SHADOW PUBLIC LICENSE v1.0
+
+═══════════════════════════════════════════════════════════════════════════════

@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">
-  <img src="shadowscan-logo.png" alt="ShadowScan Logo" width="600">
+  <img src="https://raw.githubusercontent.com/mherasmeherazhosensiamiam/ShadowScan/main/shadowscan-logo.png" alt="ShadowScan Logo" width="600">
   <br>
   🔍 ShadowScan - Advanced Network Port Scanner
 </h1>
@@ -103,13 +103,6 @@ git clone https://github.com/meherazhosensiam/ShadowScan.git
 
 # Navigate to the directory
 cd ShadowScan
-
-# make a virtual environment
-python -m venv venv
-
-# Activate the virtual environment
-
-source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -270,7 +263,7 @@ Identify services running on open ports with banner grabbing for detailed finger
 {
     "tool": "ShadowScan",
     "version": "2.0.0",
-    "author": "Meheraz HOSEN SIAM",
+    "author": "Maheraz HOSEN SIAM",
     "target": "192.168.1.1",
     "scan_date": "2024-01-15 14:30:00",
     "duration": "0:00:00.520000",
@@ -279,7 +272,7 @@ Identify services running on open ports with banner grabbing for detailed finger
         {
             "port": 22,
             "state": "open",
-            "service": "SSH (Secure Shell)",
+            "service": "SSH (Secure Shelzl)",
             "banner": "SSH-2.0-OpenSSH_8.9"
         },
         {
@@ -369,7 +362,7 @@ This project is licensed under the **Shadow Public License v1.0** - see the [LIC
 
 <div align="center">
 
-### **Meheraz HOSEN SIAM**
+### **Mahara HOSEN SIAM**
 
 *Cybersecurity Learner & Future Penetration Tester*
 
@@ -392,5 +385,5 @@ If you find ShadowScan useful, please consider giving it a ⭐ star on GitHub!
 <p align="center">
   <b>ShadowScan</b> - Illuminating Network Security, One Port at a Time
   <br>
-  <i>Made with ❤️ by Meheraz HOSEN SIAM</i>
+  <i>Made with ❤️ by Mahara HOSEN SIAM</i>
 </p>

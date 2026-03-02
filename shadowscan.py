@@ -55,7 +55,7 @@ except ImportError:
 # Version and Tool Information
 TOOL_NAME = "ShadowScan"
 VERSION = "2.0.0"
-AUTHOR = "Mahara HOSEN SIAM"
+AUTHOR = "MEHERAZ HOSEN SIAM"
 DESCRIPTION = "Advanced Network Port Scanner for Penetration Testing"
 
 # Common Ports and Services Database
@@ -126,7 +126,7 @@ def print_french_welcome():
     """Display French themed welcome message"""
     welcome = f"""
 {Fore.BLUE}╔═══════════════════════════════════════════════════════════════════╗
-{Fore.BLUE}║  {Fore.WHITE}🇫🇷 Bienvenue dans ShadowScan - Navigation France{Fore.BLUE}              ║
+{Fore.BLUE}║  {Fore.WHITE}🇫🇷 Bienvenue dans ShadowScan - Navigation {Fore.BLUE}              ║
 {Fore.BLUE}╠═══════════════════════════════════════════════════════════════════╣
 {Fore.BLUE}║  {Fore.CYAN}[1]{Fore.WHITE} Analyse rapide (Quick Scan)     {Fore.CYAN}[2]{Fore.WHITE} Analyse complète      {Fore.BLUE}║
 {Fore.BLUE}║  {Fore.CYAN}[3]{Fore.WHITE} Capture de bannière           {Fore.CYAN}[4]{Fore.WHITE} Ports personnalisés   {Fore.BLUE}║

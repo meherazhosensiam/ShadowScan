@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ShadowScan - Advanced Network Port Scanner
-Author: Mahara HOSEN SIAM
+Author: Meheraz HOSEN SIAM
 Description: A professional penetration testing tool for network reconnaissance
 License: Shadow Public License v1.0
 """

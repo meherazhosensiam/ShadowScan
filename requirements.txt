@@ -5,11 +5,8 @@
 # Required for colored terminal output (cross-platform)
 colorama>=0.4.6
 
-# Optional but recommended for enhanced functionality
-# These are optional as ShadowScan can run without them
-
-# For advanced networking features (optional)
-# socket is built-in Python module, no installation needed
+# Optional: For advanced packet manipulation
+# scapy>=2.5.0  # Uncomment if you want enhanced packet crafting
 
 # Development dependencies (for contributors)
 # pytest>=7.0.0

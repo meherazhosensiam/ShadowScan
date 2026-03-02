@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ShadowScan - Setup Configuration
-Author: Meheraz HOSEN SIAM
+Author: Mahara HOSEN SIAM
 """
 
 from setuptools import setup, find_packages
@@ -13,16 +13,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="shadowscan",
     version="2.0.0",
-    author="Mahara HOSEN SIAM",
-    author_email="mharasiam@example.com",
+    author="Meheraz HOSEN SIAM",
+    author_email="meherazhosensiam@example.com",
     description="Advanced Network Port Scanner for Penetration Testing",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/mharasiam/ShadowScan",
+    url="https://github.com/meherazhosensiam/ShadowScan",
     project_urls={
-        "Bug Tracker": "https://github.com/mharasiam/ShadowScan/issues",
-        "Documentation": "https://github.com/mharasiam/ShadowScan#readme",
-        "Source Code": "https://github.com/mharasiam/ShadowScan",
+        "Bug Tracker": "https://github.com/meherazhosensiam/ShadowScan/issues",
+        "Documentation": "https://github.com/meherazhosensiam/ShadowScan#readme",
+        "Source Code": "https://github.com/meherazhosensiam/ShadowScan",
     },
     classifiers=[
         "Development Status :: 5 - Production/Stable",

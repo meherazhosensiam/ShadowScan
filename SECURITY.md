@@ -68,7 +68,7 @@ If you discover a security vulnerability in ShadowScan itself (not vulnerabiliti
 
 **ShadowScan is provided "as is" without warranty of any kind.**
 
-The author (Mahara HOSEN SIAM) is not responsible for:
+The author (Meheraz HOSEN SIAM) is not responsible for:
 - Any misuse of the tool
 - Damages caused by use or misuse
 - Legal consequences of unauthorized scanning
@@ -87,5 +87,5 @@ Users are solely responsible for ensuring they have proper authorization and com
 
 ---
 
-*Last updated: January 2026*
+*Last updated: January 2024*
 *Author: Meheraz HOSEN SIAM*

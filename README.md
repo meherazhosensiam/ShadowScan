@@ -2,7 +2,7 @@
   <img src="https://img.shields.io/badge/ShadowScan-v2.0.0-blue?style=for-the-badge&logo=python" alt="ShadowScan Version">
   <img src="https://img.shields.io/badge/Python-3.8%2B-green?style=for-the-badge&logo=python" alt="Python Version">
   <img src="https://img.shields.io/badge/License-Shadow%20Public%20License%20v1.0-purple?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/badge/Author-Mahara%20HOSEN%20SIAM-orange?style=for-the-badge" alt="Author">
+  <img src="https://img.shields.io/badge/Author-Meheraz%20HOSEN%20SIAM-orange?style=for-the-badge" alt="Author">
 </p>
 
 <h1 align="center">
@@ -14,7 +14,7 @@
 <p align="center">
   <i>A professional penetration testing tool for network reconnaissance and port scanning</i>
   <br>
-  <b> | Multilingual Support</b>
+  <b>🇫🇷 Navigation France | Multilingual Support</b>
 </p>
 
 ---
@@ -47,12 +47,14 @@ ShadowScan enables security professionals to discover open ports, identify runni
 
 | Feature | Description |
 |---------|-------------|
-| **Multi-threaded Scanning** | Utilize multiple threads for lightning-fast port scanning |
-| **Service Detection** | Automatically identify services running on open ports |
-| **Banner Grabbing** | Capture service banners for fingerprinting |
+| **TCP Connect Scan** | Standard full TCP handshake scanning |
+| **SYN Scan (Stealth)** | Half-open TCP scan for stealthy reconnaissance |
+| **UDP Scan** | Comprehensive UDP port scanning with service detection |
+| **OS Fingerprinting** | Remote operating system detection via TCP/IP stack analysis |
+| **Banner Fingerprinting** | Service identification with 100+ signatures |
+| **Modular Architecture** | Extensible, maintainable code structure |
+| **Multi-threaded** | Optimized thread pool for high-performance scanning |
 | **French Navigation** | Intuitive menu system with French language support |
-| **Export Options** | Save results in JSON or plain text formats |
-| **Color-coded Output** | Easy-to-read terminal output with semantic colors |
 
 ---
 
@@ -60,31 +62,33 @@ ShadowScan enables security professionals to discover open ports, identify runni
 
 ### 🔍 Core Scanning Capabilities
 
-- **Quick Scan**: Rapidly scan the most common 24 ports used in enterprise environments
-- **Full Scan**: Comprehensive scan of all 65,535 TCP ports
-- **Custom Scan**: Define specific port ranges or individual ports to scan
-- **Service Detection**: Identify services and applications running on discovered ports
-- **Banner Grabbing**: Extract service banners for detailed fingerprinting and version detection
+- **TCP Connect Scan**: Full TCP handshake - most reliable, easily detected
+- **SYN Scan (Stealth)**: Half-open scan - faster, requires root privileges
+- **UDP Scan**: Connectionless scanning for UDP services (DNS, SNMP, etc.)
+- **Custom Port Ranges**: Scan specific ports or ranges
+- **Service Detection**: Identify 50+ services automatically
+- **Banner Grabbing**: Protocol-specific probes for accurate fingerprinting
+
+### 🔬 Advanced Features
+
+- **OS Fingerprinting**: Detect remote OS via TTL analysis, ICMP probing, and port patterns
+- **Banner Analysis**: Comprehensive database with 100+ service signatures
+- **Vulnerability Hints**: Known CVE patterns for detected services
+- **CPE Generation**: Common Platform Enumeration for vulnerability databases
 
 ### 🎨 User Interface
 
-- **Interactive Mode**: User-friendly menu-driven interface with French navigation
+- **Interactive Mode**: Menu-driven interface with French navigation
 - **Command Line Mode**: Full-featured CLI for automation and scripting
-- **Color-coded Results**: Visual distinction between secure, common, and potentially vulnerable ports
-- **Progress Indicators**: Real-time feedback during scanning operations
-
-### 📊 Output & Reporting
-
-- **JSON Export**: Structured output for integration with other tools
-- **Text Export**: Human-readable reports for documentation
-- **Verbose Mode**: Detailed output including banner information
-- **Summary Reports**: Consolidated view of all discovered services
+- **Color-coded Results**: Visual distinction by port type and security level
+- **Multiple Export Formats**: JSON and TXT output
 
 ### ⚡ Performance Features
 
-- **Configurable Threading**: Adjust thread count based on system resources
-- **Timeout Control**: Fine-tune connection timeouts for different network conditions
-- **Efficient Port Handling**: Optimized algorithms for rapid port enumeration
+- **Optimized Thread Pool**: Dynamic worker adjustment based on task count
+- **Rate Limiting**: Control scan speed to avoid detection
+- **Batch Processing**: Efficient handling of large port ranges
+- **Graceful Interruption**: Clean Ctrl+C handling with partial results
 
 ---
 
@@ -94,8 +98,11 @@ ShadowScan enables security professionals to discover open ports, identify runni
 
 - Python 3.8 or higher
 - pip (Python package manager)
+- Git (optional, for cloning)
 
-### Quick Install
+---
+
+### Step 1: Clone the Repository
 
 ```bash
 # Clone the repository
@@ -103,30 +110,74 @@ git clone https://github.com/meherazhosensiam/ShadowScan.git
 
 # Navigate to the directory
 cd ShadowScan
-
-#Create a Virtual Environment
-#Make sure Python is installed
-#Linux/macOS:
-python -m venv venv
-source venv/bin/activate
-#Windows (cmd):
-myenv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Make the script executable (Linux/macOS)
-chmod +x shadowscan.py
 ```
 
-### Manual Installation
+---
+
+### Step 2: Create Virtual Environment
+
+**Virtual environment is highly recommended** to keep dependencies isolated and avoid conflicts with other Python projects.
+
+#### On Linux / macOS:
 
 ```bash
-# Install colorama for colored output (optional but recommended)
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+```
+
+#### On Windows:
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+venv\Scripts\activate
+```
+
+#### On Windows (PowerShell):
+
+```powershell
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+.\venv\Scripts\Activate.ps1
+```
+
+> **Note**: After activation, you will see `(venv)` prefix in your terminal prompt, indicating the virtual environment is active.
+
+---
+
+### Step 3: Install Dependencies
+
+```bash
+# Install required packages
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+# Install colorama for colored output (recommended)
 pip install colorama
 ```
 
-### Verify Installation
+---
+
+### Step 4: Make Script Executable (Linux/macOS)
+
+```bash
+# Make the script executable
+chmod +x shadowscan.py
+```
+
+---
+
+### Step 5: Verify Installation
 
 ```bash
 # Run ShadowScan with version flag
@@ -138,11 +189,23 @@ python shadowscan.py -i
 
 ---
 
+### Deactivate Virtual Environment
+
+When you're done using ShadowScan, you can deactivate the virtual environment:
+
+```bash
+# Deactivate virtual environment
+deactivate
+```
+
+---
+
 ## 💻 Usage
 
 ### Interactive Mode (Recommended for Beginners)
 
 ```bash
+# Make sure virtual environment is activated first
 python shadowscan.py -i
 ```
 
@@ -152,24 +215,33 @@ This launches the interactive menu with French navigation:
 ╔═══════════════════════════════════════════════════════════════════╗
 ║  🇫🇷 Bienvenue dans ShadowScan - Navigation France              ║
 ╠═══════════════════════════════════════════════════════════════════╣
-║  [1] Analyse rapide (Quick Scan)     [2] Analyse complète      ║
-║  [3] Capture de bannière           [4] Ports personnalisés   ║
-║  [5] Détection de services         [6] Analyse UDP           ║
-║  [7] Exporter les résultats        [8] Paramètres            ║
-║  [9] À propos                     [0] Quitter               ║
+║  [1] TCP Quick Scan    [2] TCP Full Scan    [3] SYN Scan        ║
+║  [4] UDP Scan          [5] Custom Ports     [6] Banner Grab     ║
+║  [7] OS Fingerprint    [8] Export Results   [9] About           ║
+║  [0] Exit                                                         ║
 ╚═══════════════════════════════════════════════════════════════════╝
 ```
 
 ### Command Line Examples
 
-#### Quick Scan (Common Ports)
+#### TCP Quick Scan (Common Ports)
 ```bash
 python shadowscan.py -t 192.168.1.1
 ```
 
-#### Full Port Scan
+#### TCP Full Port Scan
 ```bash
-python shadowscan.py -t example.com --full
+python shadowscan.py -t example.com --tcp --full
+```
+
+#### SYN Scan (Stealth - Requires Root)
+```bash
+sudo python shadowscan.py -t 192.168.1.1 --syn
+```
+
+#### UDP Scan
+```bash
+python shadowscan.py -t 192.168.1.1 --udp
 ```
 
 #### Custom Port Range
@@ -187,6 +259,11 @@ python shadowscan.py -t 192.168.1.1 -p 22,80,443,8080
 python shadowscan.py -t 192.168.1.1 -b -v
 ```
 
+#### OS Fingerprinting
+```bash
+python shadowscan.py -t 192.168.1.1 --os-fingerprint
+```
+
 #### Export Results
 ```bash
 python shadowscan.py -t 192.168.1.1 -e results.json
@@ -200,9 +277,13 @@ python shadowscan.py -t 192.168.1.1 -e results.json
 |--------|-----------|-------------|
 | `-t` | `--target` | Target IP address or hostname |
 | `-p` | `--ports` | Port range (e.g., 1-1000) or comma-separated list |
+| `--tcp` | | TCP connect scan (default) |
+| `--syn` | | SYN scan (requires root privileges) |
+| `--udp` | | UDP scan |
 | `--full` | | Perform full port scan (1-65535) |
 | `--quick` | | Quick scan on common ports (default) |
 | `-b` | `--banner` | Enable banner grabbing |
+| `--os-fingerprint` | | Enable OS fingerprinting |
 | `-th` | `--threads` | Number of threads (default: 100) |
 | `-to` | `--timeout` | Connection timeout in seconds (default: 1.0) |
 | `-v` | `--verbose` | Enable verbose output |
@@ -214,21 +295,32 @@ python shadowscan.py -t 192.168.1.1 -e results.json
 
 ## 📊 Scan Types
 
-### 1. Quick Scan
-Scans the 24 most common ports used in enterprise environments:
-- FTP (21), SSH (22), Telnet (23), SMTP (25)
-- DNS (53), HTTP (80), POP3 (110), RPC (135)
-- NetBIOS (139), IMAP (143), HTTPS (443), SMB (445)
-- And more...
+### 1. TCP Connect Scan
+Standard full TCP handshake scanning. Most reliable but easily detected.
+- Completes full 3-way handshake
+- Works without special privileges
+- Most accurate results
 
-### 2. Full Scan
-Comprehensive scan of all 65,535 TCP ports. Recommended for thorough security assessments.
+### 2. SYN Scan (Stealth)
+Half-open TCP scan for stealthy reconnaissance.
+- Sends SYN, analyzes response, no ACK
+- Faster than TCP connect
+- **Requires root/admin privileges**
+- Harder to detect
 
-### 3. Custom Scan
-Scan specific ports or ranges based on your requirements.
+### 3. UDP Scan
+Connectionless scanning for UDP services.
+- DNS (53), SNMP (161), TFTP (69), NTP (123)
+- DHCP, mDNS, and more
+- Uses protocol-specific probes
+- Slower due to timeout requirements
 
-### 4. Service Detection
-Identify services running on open ports with banner grabbing for detailed fingerprinting.
+### 4. OS Fingerprinting
+Remote operating system detection through TCP/IP stack analysis.
+- TTL analysis for OS family detection
+- ICMP probing for additional fingerprinting
+- Port pattern analysis for OS classification
+- Estimated hop distance calculation
 
 ---
 
@@ -271,7 +363,7 @@ Identify services running on open ports with banner grabbing for detailed finger
 {
     "tool": "ShadowScan",
     "version": "2.0.0",
-    "author": "Maheraz HOSEN SIAM",
+    "author": "Meheraz HOSEN SIAM",
     "target": "192.168.1.1",
     "scan_date": "2024-01-15 14:30:00",
     "duration": "0:00:00.520000",
@@ -280,7 +372,7 @@ Identify services running on open ports with banner grabbing for detailed finger
         {
             "port": 22,
             "state": "open",
-            "service": "SSH (Secure Shelzl)",
+            "service": "SSH (Secure Shell)",
             "banner": "SSH-2.0-OpenSSH_8.9"
         },
         {
@@ -299,14 +391,37 @@ Identify services running on open ports with banner grabbing for detailed finger
 
 ```
 ShadowScan/
-├── shadowscan.py          # Main scanner script
-├── README.md              # Documentation (this file)
-├── requirements.txt       # Python dependencies
-├── LICENSE                # Shadow Public License v1.0
-├── CONTRIBUTING.md        # Contribution guidelines
-├── .gitignore            # Git ignore patterns
-└── assets/
-    └── shadowscan-logo.png
+├── shadowscan.py              # Main entry point
+├── shadowscan-logo.png        # Logo image
+├── README.md                  # Documentation
+├── requirements.txt           # Python dependencies
+├── LICENSE                    # Shadow Public License v1.0
+├── setup.py                   # Pip installation config
+│
+└── shadowscan/                # Modular package
+    ├── __init__.py
+    ├── __main__.py            # CLI entry point
+    │
+    ├── core/                  # Core modules
+    │   ├── __init__.py
+    │   ├── scanner.py         # Base scanner class
+    │   └── thread_pool.py     # Optimized threading
+    │
+    ├── scanners/              # Scanner implementations
+    │   ├── __init__.py
+    │   ├── tcp_scan.py        # TCP connect scanner
+    │   ├── syn_scan.py        # SYN stealth scanner
+    │   └── udp_scan.py        # UDP scanner
+    │
+    ├── fingerprint/           # Fingerprinting modules
+    │   ├── __init__.py
+    │   ├── os_detect.py       # OS fingerprinting
+    │   └── banner_db.py       # Banner database
+    │
+    └── utils/                 # Utilities
+        ├── __init__.py
+        ├── network.py         # Network utilities
+        └── output.py          # Output formatting
 ```
 
 ---
@@ -323,7 +438,7 @@ ShadowScan/
 
 ### Legal Disclaimer
 
-The author, **Mahara HOSEN SIAM**, is not responsible for any misuse or damage caused by this tool. This software is provided for educational and authorized penetration testing purposes only. Users are solely responsible for ensuring they have proper authorization before scanning any networks or systems.
+The author, **Meheraz HOSEN SIAM**, is not responsible for any misuse or damage caused by this tool. This software is provided for educational and authorized penetration testing purposes only. Users are solely responsible for ensuring they have proper authorization before scanning any networks or systems.
 
 ### Best Practices
 
@@ -370,13 +485,11 @@ This project is licensed under the **Shadow Public License v1.0** - see the [LIC
 
 <div align="center">
 
-### **Mahara HOSEN SIAM**
+### **Meheraz HOSEN SIAM**
 
 *Cybersecurity Learner & Future Penetration Tester*
 
-[![GitHub](https://img.shields.io/badge/GitHub-mharasiam-181717?style=for-the-badge&logo=github)](https://github.com/mharasiam)
-[![Twitter](https://img.shields.io/badge/Twitter-@mharasiam-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/mharasiam)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mahara%20HOSEN%20SIAM-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mharasiam)
+[![GitHub](https://img.shields.io/badge/GitHub-meherazhosensiam-181717?style=for-the-badge&logo=github)](https://github.com/meherazhosensiam)
 
 </div>
 
@@ -386,12 +499,12 @@ This project is licensed under the **Shadow Public License v1.0** - see the [LIC
 
 If you find ShadowScan useful, please consider giving it a ⭐ star on GitHub!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mharasiam/ShadowScan&type=Date)](https://star-history.com/#mharasiam/ShadowScan&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=meherazhosensiam/ShadowScan&type=Date)](https://star-history.com/#meherazhosensiam/ShadowScan&Date)
 
 ---
 
 <p align="center">
   <b>ShadowScan</b> - Illuminating Network Security, One Port at a Time
   <br>
-  <i>Made with ❤️ by MEHERAZ HOSEN SIAM</i>
+  <i>Made with ❤️ by Meheraz HOSEN SIAM</i>
 </p>

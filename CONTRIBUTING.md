@@ -237,7 +237,7 @@ For feature requests, please include:
 If you have questions about contributing, feel free to:
 
 - Open an issue with the "question" label
-- Reach out to the author: Mahara HOSEN SIAM
+- Reach out to the author: Meheraz HOSEN SIAM
 
 ---
 
@@ -245,4 +245,4 @@ Thank you for contributing to ShadowScan! Your efforts help make this tool bette
 
 ---
 
-*Made with ❤️ by Mahara HOSEN SIAM*
+*Made with ❤️ by Meheraz HOSEN SIAM*

@@ -263,7 +263,7 @@ Identify services running on open ports with banner grabbing for detailed finger
 {
     "tool": "ShadowScan",
     "version": "2.0.0",
-    "author": "Mahara HOSEN SIAM",
+    "author": "Meheraz HOSEN SIAM",
     "target": "192.168.1.1",
     "scan_date": "2024-01-15 14:30:00",
     "duration": "0:00:00.520000",
@@ -362,7 +362,7 @@ This project is licensed under the **Shadow Public License v1.0** - see the [LIC
 
 <div align="center">
 
-### **Mahara HOSEN SIAM**
+### **Meheraz HOSEN SIAM**
 
 *Cybersecurity Learner & Future Penetration Tester*
 

@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/mherasmeherazhosensiamiam/ShadowScan/main/shadowscan-logo.png" alt="ShadowScan Logo" width="600">
+  <img src="shadowscan-logo.png" alt="ShadowScan Logo" width="600">
   <br>
   🔍 ShadowScan - Advanced Network Port Scanner
 </h1>
@@ -385,5 +385,5 @@ If you find ShadowScan useful, please consider giving it a ⭐ star on GitHub!
 <p align="center">
   <b>ShadowScan</b> - Illuminating Network Security, One Port at a Time
   <br>
-  <i>Made with ❤️ by Mahara HOSEN SIAM</i>
+  <i>Made with ❤️ by MEHERAZ HOSEN SIAM</i>
 </p>
